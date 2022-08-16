@@ -1,0 +1,8 @@
+<h1>Login to your account below:</h1>
+<%= form_tag '/login' do %>
+    <label>Username:</label>
+    <%= text_field_tag 'user[name]' %><br>
+    <label>Password:</label>
+    <%= text_field_tag 'user[password]' %><br>
+    <%= submit_tag "Login" %>
+<% end %>
